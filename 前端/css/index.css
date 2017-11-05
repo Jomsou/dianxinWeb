@@ -1,0 +1,878 @@
+@charset 'UTF-8';
+/**
+ * 
+ * @authors Jomsou
+ * @date    2017-10-29 14:19:18
+ * @version 1.0
+ */
+/* 通用部分 */
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    font: '微软雅黑', 'Segoe UI','Lucida Grande',Helvetica,Arial,'Microsoft YaHei',FreeSans,Arimo,'Droid Sans','wenquanyi micro hei','Hiragino Sans GB','Hiragino Sans GB W3',FontAwesome,sans-serif;
+
+    overflow-x: hidden;
+
+    margin: 0;
+
+    background: #fff;
+}
+li
+{
+    list-style: none;
+}
+img
+{
+    display: block;
+
+    border: 0;
+}
+.width
+{
+    position: relative;
+
+    width: 1200px;
+    margin: 0 auto;
+}
+a
+{
+    font-size: 15px;
+
+    text-decoration: none;
+
+    color: #76777b;
+}
+/* 头部 */
+.header
+{
+    position: relative;
+
+    width: 100%;
+    height: 150px;
+
+    background: #4093e0;
+}
+.header-sub
+{
+    line-height: 150px;
+
+    box-sizing: border-box;
+    height: 150px;
+    padding-top: 20px;
+}
+/* 学院logo */
+#xueyuan-logo
+{
+    float: left;
+
+    width: 115px;
+    height: 115px;
+    padding-left: 100px;
+}
+/* 学院名字和学校名字 */
+#xueyuan-name,
+#school-name
+{
+    position: relative;
+
+    float: left;
+
+    width: 450px;
+    height: 120px;
+}
+#xueyuan-name-up,
+#school-name-up
+{
+    font-size: 54px;
+    line-height: 80px;
+
+    float: left;
+
+    width: 450px;
+    height: 80px;
+    padding-left: 15px;
+
+    color: #fff;
+}
+#xueyuan-name-down,
+#school-name-down
+{
+    font-size: 16px;
+
+    position: absolute;
+    bottom: 65px;
+    left: 15px;
+
+    width: 450px;
+    height: 30px;
+
+    color: #fff;
+}
+#school-name
+{
+    width: 265px;
+    height: 100px;
+    margin-left: 15px;
+
+    border-left: 1px solid #fff;
+}
+#school-name-up
+{
+    font-size: 30px;
+
+    width: 265px;
+}
+#school-name-down
+{
+    font-size: 14px;
+
+    width: 265px;
+}
+.search-down
+{
+    position: relative;
+
+    float: left;
+    clear: both;
+
+    width: 225px;
+    height: 26px;
+    margin-top: -40px;
+    margin-left: 70%;
+}
+/* 搜索框 */
+.search #find
+{
+    position: relative;
+    z-index: 1;
+
+    width: 225px;
+    height: 26px;
+    padding: 2px;
+    padding-left: 10px;
+
+    color: #fff;
+    border: 1px solid #fff;
+    -moz-border-radius: 26px; /* Firefox */
+    -webkit-border-radius: 26px; /* Safari 和 Chrome */
+    border-radius: 26px; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */
+    behavior: url(ie-css3.htc);
+    background: #4093e0;
+}
+/* 搜索提交按钮 */
+#searchsubmit
+{
+    position: relative;
+    z-index: 99;
+
+    float: left;
+
+    width: 22px;
+    height: 22px;
+    margin-top: -27px;
+    margin-left: 200px;
+    padding: 0;
+
+    border: none;
+    background: url(../images/icon-search.png) no-repeat;
+    /*css hack*/
+    margin-top: -22px\9\0;          /*ie9.0*/
+}
+/* 导航栏 */
+.nav
+{
+    position: relative;
+    z-index: 2;
+
+    width: 100%;
+    height: 45px;
+    -moz-box-shadow: 0 0 20px #cacaca; /* Firefox */
+    -webkit-box-shadow: 0 0 20px #cacaca;/* Safari 和 Chrome */
+    box-shadow: 0 0 20px #cacaca;/* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */
+    behavior: url(ie-css3.htc);
+}
+.nav ul
+{
+    line-height: 45px;
+
+    height: 45px;
+}
+.nav ul li
+{
+    display: inline-block;
+
+    box-sizing: border-box;
+    width: 100px;
+
+    text-align: center;
+}
+.nav ul li a
+{
+    font-size: 16px;
+}
+/* 二级菜单 */
+.nav ul li .sub-nav
+{
+    display: none;
+
+    width: 100px;
+    height: 150px;
+
+    border-bottom: 3px solid #4093e0;
+    background: #fff;
+}
+.nav ul li .sub-nav li
+{
+    float: left;
+
+    width: 100px;
+    height: 32px;
+    padding: 0;
+
+    text-align: center;
+}
+.nav ul li:hover .sub-nav
+{
+    display: block;
+    /*css hack*/
+    margin-bottom: -140px\9;           /*ie6.0、7.0、8.0共用*/
+    margin-bottom: -140px\9\0;          /*ie9.0*/
+}
+.nav ul li .sub-nav li a
+{
+    font-size: 15px;
+}
+.nav ul li .sub-nav li a:hover
+{
+    color: #4093e0;
+}
+/* 新闻轮播 */
+.container
+{
+    position: relative;
+    z-index: 1;
+
+    height: 500px;
+    margin-top: 30px;
+
+    background: #d2d2d2;
+}
+/*左边菜单栏*/
+#news
+{
+    float: left;
+
+    width: 200px;
+    height: 490px;
+    margin-top: -10px;
+    margin-left: 20px;
+}
+#leftbar
+{
+    font-size: 30px;
+
+    position: relative;
+
+    width: 195px;
+    height: 500px;
+    padding-top: 20px;
+
+    text-align: center;
+
+    color: #7c7b7b;
+    background: #fff;
+}
+#news ul
+{
+    position: relative;
+    z-index: 5;
+
+    width: 200px;
+    height: 435px;
+    margin-top: 20px;
+}
+#news ul li
+{
+    line-height: 60px;
+
+    width: 250px;
+    height: 60px;
+    margin-left: -25px;
+
+    text-align: center;
+
+    background: #4093e0;
+    -moz-box-shadow: 0 0 20px #333; /* Firefox */
+    -webkit-box-shadow: 0 0 20px #333;/* Safari 和 Chrome */
+    box-shadow: 0 0 20px #333;/* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */
+    behavior: url(ie-css3.htc);
+}
+#news ul li a
+{
+    font-size: 18px;
+
+    display: block;
+
+    color: #fff;
+}
+#news ul li a:hover
+{
+    font-size: 20px;
+}
+#news ul li:hover
+{
+    width: 260px;
+    margin-right: 5px;
+    margin-left: -30px;
+
+    background: #0775db;
+}
+#more
+{
+    position: absolute;
+    right: 40px;
+    bottom: 10px;
+}
+/* 右边轮播区 */
+#gla
+{
+    position: relative;
+    z-index: 1;
+
+    float: left;
+    overflow: hidden;
+
+    width: 900px;
+}
+#gla_box
+{
+    width: 900px;
+    height: 500px;
+}
+.gla_inbox
+{
+    position: relative;
+    z-index: 2;
+
+    clear: both;
+    overflow: hidden;
+
+    width: 900px;
+    height: 480px;
+    margin-left: 80px;
+    padding-top: 20px;
+}
+.roundabout-holder
+{
+    width: 900px;
+    height: 480px;
+}
+.roundabout-moveable-item
+{
+    width: 900px;
+    height: 480px;
+
+    cursor: pointer;;
+}
+.roundabout-in-focus
+{
+    cursor: auto;
+}
+.last,
+.next
+{
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 500px;
+
+    position: relative;
+    z-index: 4;
+
+    float: left;
+
+    width: 46px;
+    height: 460px;
+    margin-left: 10px;
+
+    cursor: pointer;
+
+    opacity: .6;
+    color: #fff;
+    background: gray;
+
+    filter: opacity(60);
+}
+.last
+{
+    margin-top: 20px;
+    margin-left: -73%;
+}
+.next
+{
+    margin-top: 20px;
+    margin-left: 4px;
+}
+/* 内容部分 */
+#content-up-wrap                        /*内容上部外套*/
+{
+    width: 100%;
+    height: 430px;
+
+    background-color: #fff;
+}
+#content-buttom-wrap                        /*内容下部外套*/
+{
+    width: 100%;
+    height: 540px;
+
+    background-color: #fff;
+}
+/*----------------------------内容------------------------------------*/
+#content-up
+{
+    width: 1200px;
+    height: 403px;
+    margin: 0 auto;
+    padding: 13.5px 0;
+    box-sizing: border-box;
+}
+#content-buttom
+{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/*-------------------------------细分盒子--------------------------------------*/
+/*主体内容上部分*/
+.content-up-left
+{
+    float: left;
+
+    width: 700px;
+    height: 403px;
+    margin-top: 25px;
+    
+    -moz-box-shadow: 0 0 20px #76777b; /* Firefox */
+    -webkit-box-shadow: 0 0 20px #76777b;/* Safari 和 Chrome */
+    box-shadow: 0 0 20px #76777b;/* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */
+    behavior: url(ie-css3.htc);
+}
+.content-up-left-title
+{
+    margin: 5px 17px 10px 46px;
+}
+.content-up-left-content
+{
+    width: 540px;
+    height: 320px;
+    padding: 5px 60px;
+}
+.content-up-left-content li
+{
+    line-height: 40px;
+
+    width: 540px;
+    height: 40px;
+
+    list-style-type: square;
+
+    color: #76777b;
+}
+.content-up-left-content li a
+{
+    display: block;
+    font-size: 16px;
+}
+.content-up-left-content li a:hover
+{
+    color: #4093e0;
+}
+.content-up-left-content p
+{
+    font-size: 16px;
+
+    display: inline;
+    float: right;
+
+    height: 20px;
+}
+.content-up-right                      /*主体内容上部分右边*/
+{
+    float: left;
+
+    width: 462px;
+    height: 403px;
+    margin-left: 35px;
+    margin-top: 25px;
+    background-color: #76777b;
+    -moz-box-shadow: 0 0 20px #76777b; /* Firefox */
+    -webkit-box-shadow: 0 0 20px #76777b;/* Safari 和 Chrome */
+    box-shadow: 0 0 20px #76777b;/* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */
+    behavior: url(ie-css3.htc);
+}
+.content-up-right-main
+{
+    float: left;
+    margin-left: 20px;
+    width: 430px;
+    height: 100%;
+
+    border-left: 4px solid #bababa;
+}
+.content-up-title-big               /*学术交流*/
+{
+    font-size: 33px;
+    line-height: 70px;
+
+    margin: 0 17px 30px 46px;
+
+    color: #fff;
+}
+.content-up-title-small              /*学术交流*/
+{
+    font-size: 17px;
+
+    color: #fff;
+}
+
+.content-up-right-list-u                    /*学术交流列表一*/
+{
+    float: left;
+
+    list-style: none;
+}
+.content-up-right-list-left
+{
+    margin: 10px 12px 8px 28px;
+    padding: 8px 12px;
+
+    border-radius: 10px;
+}
+.content-up-right-list-left:hover
+{
+    background-color: #3f91dd;
+    -moz-box-shadow: 0 0 20px #76777b; /* Firefox */
+    -webkit-box-shadow: 0 0 20px #76777b;/* Safari 和 Chrome */
+    box-shadow: 0 0 20px #76777b;/* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */
+    behavior: url(ie-css3.htc);
+}
+.content-up-right-list-left > a
+{
+    font-size: 19px;
+
+    color: #fff;
+}
+/*主体内容下部分*/
+.content-buttom-left                         /*主体内容下部分左边大盒子*/
+{
+    clear: both;
+    float: left;
+    width: 494px;
+    height: 487px;
+    margin-top: 15px;
+}
+.content-buttom-left-timetable                              /*主体内容下部分左边头部*/
+{
+    padding: 13px 130px;
+
+    background-color: #76777b;
+}
+.content-buttom-left-timetable-wrap
+{
+    width: 234px;
+    height: 40px;
+
+    color: #fff;
+    -moz-box-shadow: 0 0 20px #76777b; /* Firefox */
+    -webkit-box-shadow: 0 0 20px #76777b;/* Safari 和 Chrome */
+    box-shadow: 0 0 20px #76777b;/* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */
+    behavior: url(ie-css3.htc);
+}
+.content-buttom-left-timetable-title1                    /*主体内容下部分文字周程表*/
+{
+    font-size: 33px;
+
+    margin-right: 18px;
+}
+.content-buttom-left-timetable-title2                    /*主体内容下部分文字周程表英文*/
+{
+    font-size: 16px;
+}
+.content-buttom-left-below                   /*主体内容下部分左边下方盒子*/
+{
+    width: 494px;
+    height: 410px;
+    margin-top: 12px;
+
+    -moz-box-shadow: 0 0 20px #76777b; /* Firefox */
+    -webkit-box-shadow: 0 0 20px #76777b;/* Safari 和 Chrome */
+    box-shadow: 0 0 20px #76777b;/* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */
+    behavior: url(ie-css3.htc);
+}
+.content-buttom-left-below-dot                  /*主体内容下部分左边下方前的圆点*/
+{
+    float: left;
+
+    width: 30px;
+    padding-top: 33px;
+    padding-left: 25px;
+}
+.content-buttom-left-below-list                  /*主体内容下部分左边下方列表*/
+{
+    float: right;
+
+    width: 400px;
+    height: 380px;
+    margin-top: 33px;
+    margin-right: 24px;
+}
+.content-buttom-left-below-list-                  /*主体内容下部分左边下方各个列*/
+{
+    width: 400px;
+    height: 43px;
+    margin: 12px 0;
+}
+.content-buttom-left-below-list-words-wrap                  /*主体内容下部分左边下方各个列的盒子外套*/
+{
+    width: 381px;
+    height: 100%;
+    margin: 0 auto;
+
+    transition: .1s all;
+
+    background-color: #76777b;
+}
+.content-buttom-left-below-list-words                  /*主体内容下部分左边下方各个列的盒子*/
+{
+    font-size: 19px;
+    line-height: 43px;
+
+    height: 43px;
+
+    text-align: center;
+
+    -moz-box-shadow: 0 0 20px #76777b; /* Firefox */
+    -webkit-box-shadow: 0 0 20px #76777b;/* Safari 和 Chrome */
+    box-shadow: 0 0 20px #76777b;/* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */
+    behavior: url(ie-css3.htc);
+}
+.content-buttom-left-below-list-words > a
+{
+    color: #fff;
+}
+.content-buttom-left-below-list-words-wrap:hover                  /*主体内容下部分左边下方各个列的盒子背景变化*/
+{
+    width: 400px;
+
+    cursor: pointer;
+}
+.content-buttom-left-below-listlast                  /*主体内容下部分左边下方最后一个“更多”*/
+{
+    float: right;
+}
+.content-buttom-left-below-listlast-
+{
+    margin-right: 10px;
+}
+.content-buttom-left-below-listlast- > a
+{
+    font-size: 16px;
+
+    color: #76777b;
+}
+.content-buttom-right                         /*主体内容下部分右边大盒子*/
+{
+    float: left;
+    margin-left: 35px;
+    width: 671px;
+    height: 487px;
+    margin-top: 15px;
+}
+.content-buttom-right-above                         /*主体内容下部分右边内容盒子*/
+{
+    width: 671px;
+    height: 335px;
+
+    -moz-box-shadow: 0 0 20px #76777b; /* Firefox */
+    -webkit-box-shadow: 0 0 20px #76777b;/* Safari 和 Chrome */
+    box-shadow: 0 0 20px #76777b;/* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */
+    behavior: url(ie-css3.htc);
+}
+.content-buttom-right-downloadcenter              /*主体内容下部分右边标题*/
+{
+    height: 40px;
+    padding: 22px 0 0 47px;
+}
+.content-buttom-right-downloadcenter1              /*主体内容下部分右边标题*/
+{
+    font-size: 33px;
+
+    margin-right: 18px;
+
+    color: #76777b;
+}
+.content-buttom-right-downloadcenter2              /*主体内容下部分右边标题*/
+{
+    font-size: 16px;
+
+    color: #76777b;
+}
+.content-buttom-right-downloadcenter > span
+{
+    line-height: 20px;
+}
+.content-buttom-right-list                                     /*主体内容下部分右边下方列表*/
+{
+    width: 624px;
+    height: 255px;
+    margin: 2px 28px;
+}
+.content-buttom-right-list-                                     /*主体内容下部分右边下方各个列*/
+{
+    width: 624px;
+    height: 39px;
+    margin: 3px 0;
+
+    -moz-border-radius: 10px; /* Firefox */
+    -webkit-border-radius: 10px; /* Safari 和 Chrome */
+    border-radius: 10px; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */
+    behavior: url(ie-css3.htc);
+}
+.content-buttom-right-list-wrap                                   /*主体内容下部分右边下方各个列盒子的外套*/
+{
+    width: 608px;
+    height: 100%;
+    margin: 0 auto;
+
+    transition: .1s all;
+
+    -moz-border-radius: 10px; /* Firefox */
+    -webkit-border-radius: 10px; /* Safari 和 Chrome */
+    border-radius: 10px; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */
+    behavior: url(ie-css3.htc);
+    background-color: #3f91dd;
+}
+.content-buttom-right-list-wrap:hover
+{
+    width: 624px;
+
+    background-color: #0775db;
+}
+.content-buttom-right-list-content                                  /*主体内容下部分右边下方各个列盒子的内容*/
+{
+    width: 608px;
+    height: 100%;
+    margin: 0 auto;
+}
+.content-buttom-right-list-content-logo
+{
+    float: left;
+
+    margin: 5px 6px 5px 10px;
+}
+.content-buttom-right-list-content-word                                 /*主体内容下部分右边下方各个列盒子的文字*/
+{
+    float: left;
+
+    margin: 8px auto;
+    padding-left: 14px;
+
+    border-left: 2px #fff solid;
+}
+.content-buttom-right-list-content-word > a
+{
+    font-size: 18px;
+
+    color: #fff;
+}
+.content-buttom-right-list-content-size
+{
+    float: right;
+
+    margin: 10px 17px;
+
+    color: #fff;
+}
+.content-buttom-right-down                          /*主体内容下部分右边下方盒子*/
+{
+    width: 671px;
+    height: 130px;
+    margin-top: 23px;
+
+    background-color: #4093e0;
+    -moz-box-shadow: 0 0 20px #76777b; /* Firefox */
+    -webkit-box-shadow: 0 0 20px #76777b;/* Safari 和 Chrome */
+    box-shadow: 0 0 20px #76777b;/* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */
+    behavior: url(ie-css3.htc);
+}
+.content-buttom-right-down-                             /*主体内容下部分右边下方盒子内容*/
+{
+    font-size: 30px;
+
+    padding: 20px 0 0 48px;
+
+    color: #fff;
+}
+/*---------底部--------*/
+.footer
+{
+    clear: both;
+    width: 100%;
+    height: 140px;
+
+    background: #7c7b7b;
+}
+#footer
+{
+    width: 1200px;
+    margin: 0 auto;
+}
+.footer-left                                   /*底部左边*/
+{
+    float: left;
+
+    height: 100%;
+    padding-top: 35px;
+
+    color: #fff;
+}
+.footer-left > span
+{
+    font-size: 16px;
+    line-height: 24px;
+
+    margin: 0 1.5px;
+}
+.footer-right                                   /*底部右边*/
+{
+    float: right;
+
+    height: 100%;
+    margin-left: 95px;
+    padding-top: 35px;
+
+    color: #fff;
+}
+.footer-right a
+{
+    color: #fff;
+}
+.footer-right > span
+{
+    font-size: 13px;
+    line-height: 24px;
+
+    margin: 0 1.5px;
+}
+#footer-right-title
+{
+    font-size: 16px;
+}
+.jishu
+{
+    float: right;
+}

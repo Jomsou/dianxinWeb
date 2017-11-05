@@ -1,0 +1,155 @@
+body
+{
+	background-color: #ffffff;
+}
+.content-wrap                           /*内容页内容盒子外套*/
+{
+	width: 100%;
+}
+.content                                   /*内容页内容盒子*/
+{
+	width: 1200px;
+	height: 4300px;
+	margin: 26px auto;
+	clear: both;
+}
+.content-left                         /*内容页内容左边盒子*/
+{
+	width: 325px;
+	height: 332px;
+	float: left;
+}
+.content-left-left                       /*内容页内容左边盒内容页内容左边部分中的左边小蓝块*/
+{
+	float: left;
+	width: 13px;
+	height: 48px;
+	background-color: #4093e0;
+	box-shadow: 0 0 2px #76777b;
+}
+.content-left-news                  /*内容页内容左边部分右边news块*/
+{
+	float: left;
+	width: 301px;
+	height: 48px;
+	margin-left: 4px;
+	background-color: #4093e0;
+	box-shadow: 0 0 2px #76777b;
+	color: #ffffff;
+}
+.content-left-news-
+{
+	color: #ffffff;
+	font-size: 25px;
+	margin-top: 13px;
+	margin-left: 112px
+}
+.content-left-right            /*内容页内容左边部分右边*/
+{
+	float: right;
+	width: 316px;
+	height: 1800px;
+}
+.content-lefts-wrap          /*内容页内容左边部分下边各个块外套*/
+{
+	width: 300px;
+	height: 42px;
+	margin: 6px auto;
+	border: 1px #d7d6d6 solid;
+	color: #666666;
+	transition: .1s all;
+	cursor: pointer;
+}
+.content-leftsC
+{
+	float: left;
+	font-size: 19px;
+	margin:  10px 13px 0 76px;
+}
+.content-leftsC
+{
+	font-size: 19px;
+	margin:  10px 13px 0 76px;
+}
+.content-leftsE
+{
+	float: left;
+	font-size: 11px;
+	margin-top: 17px;
+}
+.selected,.content-lefts-wrap:hover
+{
+	background-color: #4093e0;
+	color: #ffffff;
+	width: 100%;
+	box-shadow: 0 0 2px #76777b;
+}
+.content-right                   /*内容页内容右边*/
+{
+	float: right;
+	width: 858px;
+}
+.content-right-top                /*内容页内容右边顶部*/
+{
+	width: 858px;
+	height: 36px;
+	background-color: #4093e0;
+}
+.content-right-top-words     /*内容页内容右边顶部*/
+{
+	float: right;
+	font-size: 14px;
+	color: #ffffff;
+	margin: 12px 39px 0 0;
+	box-shadow: 0 0 2px #76777b;
+}
+.content-right-under     /*内容页内容右边下面*/
+{
+	width: 858px;
+	margin-top: 8px;
+	box-shadow: 0 0 4px #76777b;
+}
+.content-right-under-     /*内容页内容右边下面内容盒子*/
+{
+	width: 621px;
+	height: 100%;
+	margin: 0 auto;
+	color: #666666;
+	padding-top:43px;
+}
+.content-right-under-title
+{
+	width: 585px;
+	margin: 0 auto;
+	font-size: 25px;
+}
+.content-right-under-titletime
+{
+	width: 153px;
+	margin: 18px auto;
+	font-size: 11px;
+}
+.content-right-under-words
+{
+	width: 608px;
+	margin: 32px auto;
+	font-size: 15.5px;
+}
+.content-right-under-images
+{
+	margin-bottom: 18px;
+}
+.content-right-under-over
+{
+	float: right;
+	margin-top: 6px;
+	font-size: 11.6px;
+}
+.content-right-under-next
+{
+	margin-top: 66px;
+	margin-bottom: 41px;
+	font-size: 14px;
+}
+
+
